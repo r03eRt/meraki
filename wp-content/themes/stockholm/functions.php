@@ -2211,10 +2211,11 @@ add_filter( 'attachment_fields_to_save', 'qode_attachment_field_custom_size_save
 
 
 
-/** Meraki page shortcodes **/
+/** Meraki Page Shortcodes **/
 
 
-// Shortcode to output custom PHP in Visual Composer [my_vc_php_output]
+// Shortcode to output custom PHP in Visual Composer [my_vc_php_output title=""]
+// need a template .php and then use on this if
 function my_vc_shortcode( $atts ) {
     //return '<h2>This is my custom PHP output!'.ICL_LANGUAGE_CODE.'</h2>';
     if($atts['title'] == 'studio')
@@ -2225,8 +2226,54 @@ function my_vc_shortcode( $atts ) {
     {
     	get_template_part('proyectos');
     }
+    else if($atts['title'] == 'proyecto')
+    {
+    	get_template_part('proyecto');
+    }
+    else if($atts['title'] == 'contacto')
+    {
+    	get_template_part('contacto');
+    }
 
     return ob_get_clean();   
 }
 add_shortcode( 'my_vc_php_output', 'my_vc_shortcode');
+
+
+
+
+/** Meraki Custom Post Types **/
+
+//1.-para añadir traduccion crear una pagina custom-type en castellano
+//2.-titulo en castellano del proyecto [my_vc_php_output title="proyecto"]
+//3.- publicar
+//4.- marcar duplicar y traducir
+//5.- copiar todo
+//6.- ir. a la version ingles del post
+//7.- copiar contenido del español
+//8.- saldra mensaje Este documento es un duplicado de test2 y lo mantiene WPML.
+//9.- sincronizado todo
+add_action( 'init', 'create_post_type');
+function create_post_type() {
+    $labels = array(
+    'name'               => _x( 'Proyectos', 'general name of the post type' ),
+    'singular_name'      => _x( 'Proyecto', 'name for one object of this post type' ),
+    'add_new'            => _x( 'Add New', 'proyecto' ),
+    'add_new_item'       => __( 'Add New Proyecto' ),
+    'edit_item'          => __( 'Edit Proyecto' ),
+    'new_item'           => __( 'New Proyecto' ),
+    'all_items'          => __( 'All Proyectos' ),
+    'view_item'          => __( 'View Proyecto' ),
+    'search_items'       => __( 'Search Proyecto' ),
+   );
+   $args = array(
+     'labels' =>  $labels, // An array that defines the different labels assigned to the custom post type
+     'public' =>  true, // To show the custom post type on the WordPress dashboard
+     'supports' =>  array( 'title', 'editor', 'thumbnail', 'excerpt' ), // Adds support for comments, revesions, etc
+     'has_archive' =>  false, //Enables the custom post type archive at http://mysite.com/post-type/
+     'hierarchical' =>  true, //Enables the custom post type to have a hierarchy
+     'rewrite' => array( 'slug' =>  _x('proyectos', 'URL slug')), //To be able to translate the custom post slug using WPML
+);
+register_post_type( 'proyecto', $args );
+}
 

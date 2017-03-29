@@ -372,6 +372,10 @@ global $qode_toolbar;
 				</a>
 			<?php } ?>
 			
+			<!-- Cart Widget -->
+			<?php the_widget('Woocommerce_Dropdown_Cart') ?>
+
+
 				<div class="container_inner clearfix" <?php echo wp_kses($header_bottom_border_style, array('style')); ?>>
 					<?php } ?>
                     <?php if($header_bottom_appearance == "stick_with_left_right_menu") { ?>
