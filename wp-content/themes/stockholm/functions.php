@@ -2206,3 +2206,27 @@ if(!function_exists('qode_attachment_field_custom_size_save')) {
 }
 
 add_filter( 'attachment_fields_to_save', 'qode_attachment_field_custom_size_save', 10, 2 );
+
+
+
+
+
+/** Meraki page shortcodes **/
+
+
+// Shortcode to output custom PHP in Visual Composer [my_vc_php_output]
+function my_vc_shortcode( $atts ) {
+    //return '<h2>This is my custom PHP output!'.ICL_LANGUAGE_CODE.'</h2>';
+    if($atts['title'] == 'studio')
+    {
+    	get_template_part('studio');
+    }
+    else if($atts['title'] == 'proyectos')
+    {
+    	get_template_part('proyectos');
+    }
+
+    return ob_get_clean();   
+}
+add_shortcode( 'my_vc_php_output', 'my_vc_shortcode');
+
