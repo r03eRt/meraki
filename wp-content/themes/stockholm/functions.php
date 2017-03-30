@@ -2234,6 +2234,10 @@ function my_vc_shortcode( $atts ) {
     {
     	get_template_part('contacto');
     }
+    else if($atts['title'] == 'shop_online')
+    {
+    	get_template_part('shop-online');
+    }
 
     return ob_get_clean();   
 }
