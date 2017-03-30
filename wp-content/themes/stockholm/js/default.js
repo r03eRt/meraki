@@ -166,7 +166,7 @@ $j(window).load(function(){
 	initTitleAreaAnimation();
 	setContentBottomMargin();
 	footerWidth();
-	initPortfolioJustifiedGallery();
+	//initPortfolioJustifiedGallery();
 
 
 	if($j('nav.content_menu').length > 0){
