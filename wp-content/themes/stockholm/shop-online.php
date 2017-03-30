@@ -8,7 +8,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 
 <style>
 	.main-container {		
-	    height: calc(100vh - 258px);
+	    min-height: calc(100vh - 258px);
 	    background-color: #ffffff;
 	    margin-bottom: 40px!important;	    
 	}

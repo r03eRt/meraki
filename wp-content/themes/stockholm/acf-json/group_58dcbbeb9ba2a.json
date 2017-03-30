@@ -93,7 +93,7 @@
             },
             "center_lat": "",
             "center_lng": "",
-            "zoom": "",
+            "zoom": 14,
             "height": ""
         }
     ],
@@ -114,5 +114,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1490861720
+    "modified": 1490907417
 }

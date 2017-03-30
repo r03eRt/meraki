@@ -1,7 +1,5 @@
 
 
-
-
 @-ms-viewport {
   width: device-width;
 }
@@ -984,6 +982,18 @@ header:not(.sticky):not(.scrolled) .header_bottom {
     background-color: #ffffff;
     border: 1px solid #f5f5f5;
     z-index: 100;
+}
+
+nav.main_menu > ul > li > a {
+    font-family: 'Futura Light';
+    letter-spacing: 0;
+    color: #4e4d4d;
+}
+
+nav.main_menu>ul>li.active > a{
+  color: #000000;
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {

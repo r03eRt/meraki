@@ -2281,3 +2281,13 @@ function create_post_type() {
 register_post_type( 'proyecto', $args );
 }
 
+
+
+
+//gmaps api key filter for ACF
+function my_acf_init() {
+	
+	acf_update_setting('google_api_key', 'AIzaSyDzDY7dbQjnr1lcX_Cp5bYS7Z5zMlY9gIg');
+}
+
+add_action('acf/init', 'my_acf_init');
