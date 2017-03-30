@@ -44,7 +44,7 @@
             "key": "field_58dcbaafa8113",
             "label": "Texto ES",
             "name": "texto_es",
-            "type": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -54,16 +54,16 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_58dcbabaa8114",
             "label": "Texto EN",
             "name": "texto_en",
-            "type": "text",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -72,11 +72,11 @@
                 "class": "",
                 "id": ""
             },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "delay": 0
         },
         {
             "key": "field_58dcbac5a8115",
@@ -120,5 +120,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1490861828
+    "modified": 1490896040
 }
