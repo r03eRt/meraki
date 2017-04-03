@@ -1,5 +1,13 @@
 
 
+
+
+
+
+
+
+
+
 @-ms-viewport {
   width: device-width;
 }
@@ -1045,4 +1053,43 @@ nav.main_menu>ul>li.active > a{
     font-weight: 400;
     font-style: normal;
     font-stretch: normal;
+}
+
+.row.form {
+  padding-top: 45px;
+}
+
+.left-form p{
+  height: calc(240px / 4);
+}
+
+.right-form p:first-child{
+  height: calc((240px / 4) * 3);
+}
+
+.right-form p:first-child textarea {
+      height: calc(100% - 20px);
+}
+
+.left-form p:nth-child(2) {
+  height: calc(240px / 4);
+}
+
+.contenido-contacto {
+  padding-top: 30px;  
+  background-color: whitesmoke;
+}
+
+.desc-contacto {
+    text-align: center;
+    background-color: whitesmoke;
+    color: #252525;
+    font-family: 'Futura Light';
+    line-height: 18px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.desc-contacto a{
+    color: black;
 }

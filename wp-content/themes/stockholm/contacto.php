@@ -113,8 +113,23 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		</div>
 	</div>
 
-	<div class="contenido">
-		<?php echo do_shortcode('[contact-form-7 id="21911" title="Contact form 1"]') ?>
+	<div class="contenido contenido-contacto">
+		<?php 
+			if($lang === 'es')
+			{
+				echo do_shortcode('[contact-form-7 id="21911" title="Contacto ES"]');
+			}
+			else
+			{
+				echo do_shortcode('[contact-form-7 id="21915" title="Contacto EN"]');
+			}	
+
+		?>
+		
+		<div class="col-md-12 desc-contacto">
+			<?php echo get_field( 'texto_2_' . $lang ); ?>
+		</div>
+
 	</div>
 	
 </div>
