@@ -103,7 +103,7 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 ?>
     </div>
 </div>
-<footer <?php echo wp_kses($footer_classes, array('class')); ?>>
+<!-- <footer <?php echo wp_kses($footer_classes, array('class')); ?>>
 	<div class="footer_inner clearfix">
 		<?php
 		$footer_in_grid = true;
@@ -278,7 +278,25 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 			</div>
 		<?php endif; ?>
 	</div>
+</footer> -->
+<footer>
+	<div class="fotter_top_border_holder " style="height: 1px;background-color: #d7d7d7;"></div>
+	<div class="container">
+		<div class="row row-footer">
+			<div class="col-md-3 logo">
+				<img src="http://localhost/wp-content/uploads/2017/03/MERAKI.png" alt="logo" />
+			</div>
+			<div class="col-md-6 direccion">
+				<p><a href="mailto:hello@merakistudiomadrid.com">hello@merakistudiomadrid.com</a> | Calle Campoamor no 10 28010 Madrid | 0034 660 08 01 41</p>
+			</div>
+			<div class="col-md-3 social">
+				<?php echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="https://www.facebook.com/" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_twitter_circle" size="large" target="_blank" link="https://twitter.com/" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_pinterest_circle" size="large" target="_self" link="https://www.pinterest.com/" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_googleplus_circle" size="large" target="_self" link="https://plus.google.com/up/search" icon_color="#393939" icon_hover_color="#e6ae48"]') ?>
+			</div>
+		</div>
+	</div>
+
 </footer>
+
 </div>
 </div>
 <?php wp_footer(); ?>

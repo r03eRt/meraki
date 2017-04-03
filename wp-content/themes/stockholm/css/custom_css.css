@@ -8,6 +8,8 @@
 
 
 
+
+
 @-ms-viewport {
   width: device-width;
 }
@@ -1055,6 +1057,8 @@ nav.main_menu>ul>li.active > a{
     font-stretch: normal;
 }
 
+
+/** CONTACTO **/
 .row.form {
   padding-top: 45px;
 }
@@ -1092,4 +1096,47 @@ nav.main_menu>ul>li.active > a{
 
 .desc-contacto a{
     color: black;
+}
+
+/** FOOTER **/
+
+.row-footer{
+  position: relative;
+
+}
+
+.row-footer .logo {
+    position: relative;
+    min-height: 71px;
+    text-align: center;
+}
+
+.row-footer .direccion {
+  position: relative;
+  min-height: 71px;
+  text-align: center;
+}
+
+.row-footer .direccion p {
+    position: absolute;
+    top: 50%;
+    color: #252525;
+    transform: translate3d(0,-50%,0);
+}
+
+.row-footer .direccion p a{
+  color: #252525;
+}
+
+.row-footer .social {
+  position: relative; 
+  min-height: 71px;
+  text-align: center;      
+}
+
+.q_social_icon_holder {
+    position: relative;
+    display: inline-block;
+    margin: 25px 14px 0px 0!important;
+    vertical-align: middle;
 }
