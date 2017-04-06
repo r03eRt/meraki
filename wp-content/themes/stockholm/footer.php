@@ -295,7 +295,12 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 				<img src="http://localhost/wp-content/uploads/2017/03/MERAKI.png" alt="logo" />
 			</div>
 			<div class="col-md-6 direccion">
-				<p><a href="mailto:<?php echo get_field('footer_link_' . $lang, 'options')?>"><?php echo get_field('footer_link_' . $lang, 'options')?></a> <?php echo get_field('footer_direction_' . $lang, 'options')?></p>
+
+			<?php 
+				$link = get_field('footer_link_' . $lang, 'options');
+				$direction = get_field('footer_direction_' . $lang, 'options');
+			?>
+				<p><a href="mailto:<?php echo $link; ?>"><?php echo $link; ?></a> <?php echo $direction; ?></p>
 			</div>
 			<div class="col-md-3 social">
 
