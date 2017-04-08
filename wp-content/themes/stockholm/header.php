@@ -374,8 +374,8 @@ global $qode_toolbar;
 			
 			<!-- Cart Widget -->
 			<?php the_widget('Woocommerce_Dropdown_Cart') ?>
-
-			 <?php do_action('icl_language_selector'); ?>
+			<!-- Language selector -->
+			<!--<?php do_action('icl_language_selector'); ?>-->
 
 
 				<div class="container_inner clearfix" <?php echo wp_kses($header_bottom_border_style, array('style')); ?>>

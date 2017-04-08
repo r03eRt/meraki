@@ -2238,6 +2238,10 @@ function my_vc_shortcode( $atts ) {
     {
     	get_template_part('shop-online');
     }
+    else if($atts['title'] == 'prensa')
+    {
+    	get_template_part('prensa');
+    }
 
     return ob_get_clean();   
 }
