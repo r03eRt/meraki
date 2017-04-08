@@ -2214,6 +2214,17 @@ add_filter( 'attachment_fields_to_save', 'qode_attachment_field_custom_size_save
 /** Meraki Page Shortcodes **/
 
 
+//PARA TRADUCIR PAGINAS
+//--------------
+//1.- creamos la página
+//2.- previamente hemos hecho que fields groups sea traducible desde wmpl manage(donde custom post types)
+//3.- creamos el ACF con campos en ingles
+//4.- duplicamos nuestra pagina(en pagina darle al check y luego dubplicar)
+//5.- cambiamos de idioma y cambiamos el slug y le damos a todos los campos de acf a: "no hacer nada" "X copiar" "traducir"
+//6.- vamos a custom fields groups, le damos tambien a duplicar para otro idioma
+//volvemos a ir a la pagina de listados de acf y cambiamos de idioma
+//8.- veremos el acf de esa pagina en otro idoma, entramos y dentro y le damos a que se uestre cuando la pagina sea (traduccion de la pagina actual)
+
 // Shortcode to output custom PHP in Visual Composer [my_vc_php_output title=""]
 // need a template .php and then use on this if
 function my_vc_shortcode( $atts ) {
