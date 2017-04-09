@@ -4,6 +4,7 @@ Template Name: Blog Masonry
 */
 ?>
 <?php get_header(); ?>
+
 <?php
 global $wp_query;
 global $qode_template_name;

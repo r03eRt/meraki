@@ -3,7 +3,6 @@
 	global $qode_options;
     global $qode_template_name;
 	$id = $wp_query->get_queried_object_id();
-
 	if ( get_query_var('paged') ) { $paged = get_query_var('paged'); }
 	elseif ( get_query_var('page') ) { $paged = get_query_var('page'); }
 	else { $paged = 1; }
@@ -23,6 +22,8 @@
 	$blog_style = $qode_options['blog_style'];
 	$blog_list = "";
 	$blog_loading_class = "";
+
+
 
 	if($qode_template_name != "") {
 		if($qode_template_name == "blog-large-image.php"){

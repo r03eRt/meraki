@@ -222,6 +222,9 @@ switch ($_post_format) {
 		</article>
 		<?php
 		break;
+
+
+		
 	default:
 		?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

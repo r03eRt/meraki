@@ -1108,30 +1108,22 @@ nav.main_menu>ul>li.active > a{
 .row-footer .logo {
     position: relative;
     min-height: 71px;
-    text-align: center;
 }
 
 .row-footer .direccion {
   position: relative;
   min-height: 71px;
-  text-align: center;
 }
 
 .row-footer .direccion p {
     position: absolute;
     top: 50%;
-    color: #252525;
     transform: translate3d(0,-50%,0);
-}
-
-.row-footer .direccion p a{
-  color: #252525;
 }
 
 .row-footer .social {
   position: relative; 
-  min-height: 71px;
-  text-align: center;      
+  min-height: 71px;      
 }
 
 .q_social_icon_holder {

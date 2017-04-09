@@ -5,6 +5,8 @@ Template Name: Blog Masonry Full Width
 ?>
 <?php get_header(); ?>
 <?php
+
+
 global $wp_query;
 global $qode_template_name;
 global $qode_page_id;

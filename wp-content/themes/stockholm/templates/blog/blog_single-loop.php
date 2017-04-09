@@ -1,5 +1,6 @@
 <?php 
 global $qode_options;
+$lang = strtolower(ICL_LANGUAGE_CODE);
 
 $blog_author_info="no";
 if (isset($qode_options['blog_author_info'])) {
@@ -41,6 +42,8 @@ $_post_format = get_post_format();
 		case "video":
 ?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		
+
 			<div class="post_content_holder">
 				<div class="post_image">
 					<?php $_video_type = get_post_meta(get_the_ID(), "video_format_choose", true);?>
