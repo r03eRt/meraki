@@ -558,7 +558,7 @@ nav.main_menu > ul > li > a{
 	.blog_holder.masonry article .post_image a .post_overlay,
 	.blog_holder.masonry_full_width article .post_image a .post_overlay,
 	.latest_post_holder .boxes_image a .latest_post_overlay{
-		background-color: rgba(0,186,2,1);
+		background-color: rgba(255,255,255,0.6);
 	}
 
 

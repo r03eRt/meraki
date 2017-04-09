@@ -1,4 +1,7 @@
-<?php $lang = strtolower(ICL_LANGUAGE_CODE); ?>
+<?php 
+
+	$lang = strtolower(ICL_LANGUAGE_CODE); 
+?>
 
 <?php get_header(); ?>
 

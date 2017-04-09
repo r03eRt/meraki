@@ -1,4 +1,5 @@
 <?php
+$lang = strtolower(ICL_LANGUAGE_CODE); 
 global $qode_options;
 global $more;
 $more = 0;
@@ -222,9 +223,6 @@ switch ($_post_format) {
 		</article>
 		<?php
 		break;
-
-
-		
 	default:
 		?>
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>

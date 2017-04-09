@@ -3,13 +3,6 @@
 
 
 
-
-
-
-
-
-
-
 @-ms-viewport {
   width: device-width;
 }
@@ -973,6 +966,27 @@ header:not(.sticky):not(.scrolled) .header_bottom {
     top: 2vh;
 }
 
+.social-header {
+  display: block;
+  width: 120px;
+  position: absolute;
+  top: 3.8vh;
+  left: 0;
+}
+
+.social-header .q_social_icon_holder {
+  margin: 5px 14px 0px 0!important;
+}
+
+.sticky_animate .social-header {
+    display: block;
+    width: 120px;
+    position: absolute;
+    top: 1.3vh;
+    left: -12vh;
+    display: none;
+}
+
 .widget_woocommerce-dropdown-cart {
   position: absolute;
   top: 4vh;  
@@ -1118,6 +1132,7 @@ nav.main_menu>ul>li.active > a{
 .row-footer .direccion p {
     position: absolute;
     top: 50%;
+    -webkit-transform: translate3d(0,-50%,0);
     transform: translate3d(0,-50%,0);
 }
 
@@ -1131,4 +1146,8 @@ nav.main_menu>ul>li.active > a{
     display: inline-block;
     margin: 25px 14px 0px 0!important;
     vertical-align: middle;
+}
+
+.wpb_revslider_element {
+    height: calc(100% - 79px);
 }

@@ -1,4 +1,5 @@
 <?php
+	
 	global $wp_query;
 	global $qode_options;
     global $qode_template_name;

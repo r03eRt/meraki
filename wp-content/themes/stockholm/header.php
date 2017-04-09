@@ -365,6 +365,17 @@ global $qode_toolbar;
 		<div class="header_bottom clearfix" <?php echo wp_kses($header_color_per_page, array('style')); ?> >						
 			<?php if($header_in_grid){ ?>
 			<div class="container">
+			<!-- social icons -->
+			<div class="social-header">
+			<?php 
+					$instagram = get_field('instagram', 'options');
+					$facebook = get_field('facebook', 'options');
+					$twitter = get_field('twitter', 'options');
+
+					echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_twitter_circle" size="large" target="_blank" link="' . $twitter .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_self" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
+				?>
+			</div>
+
 			<!-- search button -->
 			<?php if(isset($qode_options['enable_search']) && $qode_options['enable_search'] == "yes"){ ?>
 				<a class="search_button custom_search_button <?php echo esc_attr($search_type); ?>" href="javascript:void(0)">
@@ -375,7 +386,7 @@ global $qode_toolbar;
 			<!-- Cart Widget -->
 			<?php the_widget('Woocommerce_Dropdown_Cart') ?>
 			<!-- Language selector -->
-			<!--<?php do_action('icl_language_selector'); ?>-->
+			<?php do_action('icl_language_selector'); ?>
 
 
 				<div class="container_inner clearfix" <?php echo wp_kses($header_bottom_border_style, array('style')); ?>>
