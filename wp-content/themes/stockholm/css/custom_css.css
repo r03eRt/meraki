@@ -5,6 +5,7 @@
 
 
 
+
 @-ms-viewport {
   width: device-width;
 }
@@ -1343,6 +1344,22 @@ nav.main_menu>ul>li.active > a{
 
   .social-share-resp span{
     margin-top: 0!important;
+  }
+
+  .custom_search_button {
+    position: absolute;
+    left: 5vh;
+    top: 3.8vh;
+    z-index: 99;
+  }
+
+  .language-switcher {
+    display: block;
+    width: 80px;
+    position: absolute;
+    top: 3.9vh;
+    right: -1vh;
+    z-index: 4;
   }
 
 }
