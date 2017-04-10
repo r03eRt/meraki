@@ -9,7 +9,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		width: 1024px;
 		font-family: 'Futura Light';
 		color: #252525;
-		min-height: calc(100vh - 300px);
+	    min-height: calc(100vh - 130px);
 	}
 
 	.proyectos-div {
@@ -136,6 +136,31 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		font-style: normal;
 		font-size: 12px;
 	}
+
+	@media(max-width: 1000px) {
+		.main-container {
+			width: 100%;
+		    min-height: calc(100vh - 130px);
+		}
+	}
+
+	@media(max-width: 768px) {
+		.main-container {
+			width: 100%;
+		    min-height: calc(100vh - 130px);
+		}
+	}
+
+	@media(max-width: 480px) {
+		.col-xs-6 {
+			width: 100%;		    
+		}
+
+		.proyectos-div figure .overlay{		
+		    opacity: 1;	    
+		}
+	}
+
 </style>
 
 
@@ -146,7 +171,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		for($i = 0; $i < count(get_field( 'lista_proyectos_' . $lang )); $i++){ 
 			$post_id = get_field( 'lista_proyectos_' . $lang)[$i]->ID;
 		?>
-		<a href="<?php echo get_post_permalink($post_id); ?>" class="proyectos-div block-1 col-md-3">
+		<a href="<?php echo get_post_permalink($post_id); ?>" class="proyectos-div block-1 col-xs-6 col-sm-4 col-md-3">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_destacada', $post_id );?>)"></div>
 				<div class="overlay">

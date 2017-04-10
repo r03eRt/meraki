@@ -291,10 +291,10 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 	<div class="fotter_top_border_holder " style="height: 1px;background-color: #d7d7d7;"></div>
 	<div class="container">
 		<div class="row row-footer">
-			<div class="col-md-3 logo">
+			<div class="col-sm-3 col-md-3 logo text-center">
 				<img src="http://localhost/wp-content/uploads/2017/03/MERAKI.png" alt="logo" />
 			</div>
-			<div class="col-md-6 direccion">
+			<div class="col-sm-6 col-md-6 direccion">
 
 			<?php 
 				$link = get_field('footer_link_' . $lang, 'options');
@@ -305,7 +305,7 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 					
 				</a> <?php echo $direction; ?></p>
 			</div>
-			<div class="col-md-3 social">
+			<div class="col-sm-3 col-md-3 social">
 
 				<?php 
 					$instagram = get_field('instagram', 'options');

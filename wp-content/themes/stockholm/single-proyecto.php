@@ -244,6 +244,58 @@
 	    border: none;
 	}
 
+	@media(max-width: 1000px) {
+		.main-container {
+			width: 100%;
+		    min-height: calc(100vh - 130px);
+		}
+	}
+
+	@media(max-width: 768px) {
+		.main-container {
+			width: 100%;
+		    min-height: calc(100vh - 130px);
+		}
+	}
+
+	@media(max-width: 480px) {
+		.col-xs-6 {
+			width: 100%;		    
+		}
+
+		body div.pp_default a.pp_next {
+		    right: 0;
+		    transform: translate3d(0%,0,0);
+		    opacity: 1;
+		}
+
+		body div.pp_default a.pp_previous {
+		    left: 0;
+		    transform: translate3d(0%,0,0);
+		    opacity: 1;
+		}
+
+		.pp_content {
+		    position: absolute;
+		    top: 50%;
+		    -webkit-transform: translate3d(0,-50%,0);
+		    transform: translate3d(0,-50%,0);
+		}
+
+		.pp_hoverContainer {
+		    position: absolute;
+		    top: 50%;
+		    -webkit-transform: translate3d(0,-50%,0);
+		    transform: translate3d(0,-50%,0);
+		}
+
+		.pp_fade {
+			position: relative;
+		}
+
+
+	}
+
 </style>
 
 <div class="main-container container">
@@ -257,24 +309,24 @@
 		</div>
 	</div>
 	<div class="row">
-		<a href="<?php echo get_field( 'img_1')?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-md-4">
+		<a href="<?php echo get_field( 'img_1')?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-xs-6 col-sm-4 col-md-4">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_1')?>)"></div>
 				<div class="overlay"></div>
 			</figure>
 		</a>
-		<a href="<?php echo get_field( 'img_2')?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-md-4">
+		<a href="<?php echo get_field( 'img_2')?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-xs-6 col-sm-4 col-md-4">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_2')?>)"></div>
 				<div class="overlay"></div>
 			</figure>
 		</a>
-		<div class="proyecto-div block-1 col-md-4">
+		<div class="proyecto-div block-1 col-xs-6 col-sm-4 col-md-4">
 			<h2><span><?php echo get_field( 'titular_' . $lang )?></span></h2>
 			<?php echo get_field( 'texto_' . $lang )?>
 		</div>
 		<?php for($i = 0; $i < count(get_field('repeater_img')); $i++){ ?>
-			<a href="<?php echo get_field('repeater_img')[$i]['img'] ?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-md-4">
+			<a href="<?php echo get_field('repeater_img')[$i]['img'] ?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-xs-6 col-sm-4 col-md-4">
 				<figure>
 					<div class="bg" style="background-image: url(<?php echo get_field('repeater_img')[$i]['img'] ?>)"></div>
 					<div class="overlay"></div>

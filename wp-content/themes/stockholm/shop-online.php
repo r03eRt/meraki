@@ -10,6 +10,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 	.main-container {		
 	    min-height: calc(100vh - 258px);
 	    background-color: #ffffff;
+	    margin-top: 186px!important;
 	    margin-bottom: 40px!important;	    
 	}
 
@@ -50,6 +51,32 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 	    font-weight: 500;
 	    font-family: 'Futura Light';
 	    letter-spacing: 0px;
+	}
+
+	@media(max-width: 1000px) {
+		.main-container {
+		    margin-top: 30px!important;
+		}
+	}
+
+	@media(max-width: 768px) {
+		.main-container {
+			width: 100%;
+		}
+	}
+
+	@media(max-width: 480px) {
+		.col-xs-6 {
+			width: 100%;		    
+		}
+
+		.main-container {		
+		    min-height: calc(100vh - 120px);
+		    
+		}
+		.texto {
+			width: 90%;
+		}
 	}
 
 

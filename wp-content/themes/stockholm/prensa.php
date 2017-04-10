@@ -9,7 +9,8 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		width: 1024px;
 		font-family: 'Futura Light';
 		color: #252525;
-		min-height: calc(100vh - 300px);
+		min-height: calc(100vh - 130px);
+		
 	}
 
 	.prensa-div {
@@ -136,6 +137,63 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		font-style: normal;
 		font-size: 12px;
 	}
+
+	@media(max-width: 1000px) {
+		.main-container {
+			width: 100%;
+		    min-height: calc(100vh - 130px);
+		}
+	}
+
+	@media(max-width: 768px) {
+		.main-container {
+			width: 100%;
+		    min-height: calc(100vh - 130px);
+		}
+	}
+
+	@media(max-width: 480px) {
+		.col-xs-6 {
+			width: 100%;		    
+		}
+		.main-container {
+			min-height: initial;
+		}
+
+		.prensa-div figure .overlay{		
+		    opacity: 1;	    
+		}
+
+		body div.pp_default a.pp_next {
+		    right: 0;
+		    transform: translate3d(0%,0,0);
+		    opacity: 1;
+		}
+
+		body div.pp_default a.pp_previous {
+		    left: 0;
+		    transform: translate3d(0%,0,0);
+		    opacity: 1;
+		}
+
+		.pp_content {
+		    position: absolute;
+		    top: 50%;
+		    -webkit-transform: translate3d(0,-50%,0);
+		    transform: translate3d(0,-50%,0);
+		}
+
+		.pp_hoverContainer {
+		    position: absolute;
+		    top: 50%;
+		    -webkit-transform: translate3d(0,-50%,0);
+		    transform: translate3d(0,-50%,0);
+		}
+
+		.pp_fade {
+			position: relative;
+		}
+	}
 </style>
 
 <div class="main-container container">
@@ -144,7 +202,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 
 			for($i = 0; $i < count(get_field( 'repeater_prensa')); $i++){ 
 		?>
-		<a class="prensa-div block-1 col-md-3" href="<?php echo get_field( 'repeater_prensa')[$i]['repeater_img'][0]['img']; ?>" rel="prettyPhoto[<?php echo get_field( 'repeater_prensa')[$i]['titulo_' . $lang]; ?>]">
+		<a class="prensa-div block-1 col-xs-6 col-sm-4 col-md-3" href="<?php echo get_field( 'repeater_prensa')[$i]['repeater_img'][0]['img']; ?>" rel="prettyPhoto[<?php echo get_field( 'repeater_prensa')[$i]['titulo_' . $lang]; ?>]">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'repeater_prensa')[$i]['repeater_img'][0]['img'] ?>)"></div>
 				<div class="overlay">
