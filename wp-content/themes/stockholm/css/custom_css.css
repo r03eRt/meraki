@@ -1,8 +1,6 @@
 
 
 
-
-
 @-ms-viewport {
   width: device-width;
 }
@@ -972,10 +970,17 @@ header:not(.sticky):not(.scrolled) .header_bottom {
   position: absolute;
   top: 3.8vh;
   left: 0;
+  z-index: 4;
 }
+
+
 
 .social-header .q_social_icon_holder {
   margin: 5px 14px 0px 0!important;
+}
+
+.social-header:nth-child(2){
+      margin: 0px 14px 0px 0!important;
 }
 
 .sticky_animate .social-header {
@@ -994,8 +999,12 @@ header:not(.sticky):not(.scrolled) .header_bottom {
   z-index: 99;
 }
 
+
+/**activar para mostrar +*/
 .widget.widget_woocommerce-dropdown-cart .shopping_cart_outer .shopping_cart_inner {
     height: auto;
+    display: none;
+
 }
 
 .sticky_animate .widget_woocommerce-dropdown-cart {
@@ -1019,6 +1028,71 @@ nav.main_menu>ul>li.active > a{
   font-weight: bold;
   font-style: italic;
 }
+
+.header_inner_right {
+  display: none!important;
+}
+
+.shopping_cart_outer:hover .shopping_cart_dropdown {
+  z-index: 4;
+}
+
+/** SWITCHER **/
+
+.language-switcher {
+  display: block;
+  width: 80px;
+  position: absolute;
+  top: 4.1vh;
+  right: 0;
+  z-index: 4;
+}
+
+.sticky_animate .language-switcher {
+    display: block;
+    width: 80px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 4;
+    transform: translate3d(0,-50%,0);
+}
+
+.language-switcher .wpml-ls-statics-shortcode_actions{
+  padding: 0;
+}
+
+.wpml-ls-display {
+  display: none;
+}
+
+.wpml-ls-legacy-list-horizontal a {
+  display: block;
+  text-decoration: none;
+  padding: 0px 7px;
+  line-height: 1;
+  position: relative;
+  color: #252525;
+}
+
+
+.wpml-ls-current-language a{
+  color: #c9c9c9;
+  pointer-events: none;
+}
+
+
+.language-switcher .wpml-ls-statics-shortcode_actions ul li:first-child a:after {
+    content: '';
+    background: #252525;
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
 
 @font-face {
     font-family:'Futura Thin';
@@ -1138,7 +1212,8 @@ nav.main_menu>ul>li.active > a{
 
 .row-footer .social {
   position: relative; 
-  min-height: 71px;      
+  min-height: 71px;
+  z-index: 4;      
 }
 
 .q_social_icon_holder {
@@ -1151,3 +1226,36 @@ nav.main_menu>ul>li.active > a{
 .wpb_revslider_element {
     height: calc(100% - 79px);
 }
+
+
+/** general styles**/
+
+.content .container, .main-container.container {
+    padding-top: 186px;
+}
+
+@media(max-width: 992px) {
+   .content .container, .main-container.container {
+      padding-top: 35px;
+  } 
+}
+
+@media(max-width:480px) {
+  .row-footer .logo {
+      text-align: center;
+  }
+
+  .row-footer .direccion p{
+    text-align: center;
+  }
+
+  .row-footer .social {
+    text-align: center;
+  }
+
+  #back_to_top {
+    bottom: 15px;
+  }
+}
+
+

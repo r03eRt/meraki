@@ -300,7 +300,10 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 				$link = get_field('footer_link_' . $lang, 'options');
 				$direction = get_field('footer_direction_' . $lang, 'options');
 			?>
-				<p><a href="mailto:<?php echo $link; ?>"><?php echo $link; ?></a> <?php echo $direction; ?></p>
+				<p>
+				<a href="mailto:<?php echo $link; ?>"><?php echo $link; ?><br class="visible-xs"/>
+					
+				</a> <?php echo $direction; ?></p>
 			</div>
 			<div class="col-md-3 social">
 
