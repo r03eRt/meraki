@@ -1,0 +1,67 @@
+#CREAR PROYECTO
+
+1.- Estar en el idioma español(bandera españa superior)
+2.- Ir a Pestaña proyectos
+3.- Add new proyecto
+4.- Rellenar campos obligatorios
+5.- En contenido [my_vc_php_output title="proyecto"]
+6.- Campos obligatorios:
+-Titulo
+-Subtitulo
+-Subtitulo2
+-Boton leer más
+-Imagen destacada
+-Imagen cabecera
+-Texto
+-Enlace (todavia no disponible)
+
+7.- Publicar
+8.- En apartado idioma - traducir este documento, seleccionar checkbox duplicar
+9.- Pulsar duplicar
+10.- proyecto no visible porque no está registrado todavia
+
+##Registrar proyecto
+1.- Estar en el idioma español(bandera españa superior)
+2.- Ir a Páginas - proyectos
+3.- seleccionar el Proyectos el nuevo blog que hemos creado y se añadira a la lista en su idioma(Con esto podemos controlar que post apareceran en que idioma)
+4.- Para evitar problemas añadir en los dos idiomas
+5.- Pulsar en actualizar
+
+
+#PÁGINA STUDIO
+1.- Estar en el idioma español(bandera españa superior)
+2.- Modificar los textos que queramos y las imagenes que queramos
+3.- Pulsar en actualizar
+
+#PÁGINA SHOP ONLINE
+1.- Estar en el idioma español(bandera españa superior)
+2.- Modificar los textos que queramos y las imagenes que queramos
+3.- Pulsar en actualizar
+
+#PÁGINA CONTACTO
+1.- Estar en el idioma español(bandera españa superior)
+2.- Modificar los textos que queramos y las imagenes que queramos
+3.- Pulsar en actualizar
+
+#PÁGINA PRENSA
+1.- Estar en el idioma español(bandera españa superior)
+2.- Agregar Fila principal y rellenar textos, añadir imagenes que queramos en la galeria(obligatorio al menos 1 que será la imagen destacada a mostrar)
+3.- Pulsar en actualizar
+
+#AÑADIR POST
+1.- Estar en el idioma español(bandera españa superior)
+2.- Ir a pestaña Entradas - Añadir entrada
+3.- Añadir titulo, seleccionar tipo de post y contenido
+4.- En Select title "Show title area" seleccionar "No"
+5.- Select Sidebar "Layout" seleccionar "Sidebar 1/4 right"
+6.- Seleccionar las categorias que queremos o añadir una nueva categoria
+7.- Añadir etiquetas separadas por comas en su idioma
+8.- Añadir imagen destacada
+9.- Publicar
+10.- Si se desea en otro idioma(Recomendable)
+11.- Seleccionamos en checkbox duplicar y pulsamos dubplicar
+12.- Pulsamos en "Traducir +"
+13.- Vamos traduciendo y copiando el contenido que queramos con el icono
+14.- Pulsamos en guardar y cerrar
+3.- Pulsar en actualizar
+ 

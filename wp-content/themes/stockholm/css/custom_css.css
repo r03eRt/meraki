@@ -6,6 +6,7 @@
 
 
 
+
 @-ms-viewport {
   width: device-width;
 }
@@ -956,7 +957,7 @@ header:not(.sticky):not(.scrolled) .header_bottom {
 
 .custom_search_button {
     position: absolute;
-    right: 10vh;
+    left: calc(50% + 65vh);
     top: 4.2vh;
     z-index: 99;   
 }
@@ -1049,7 +1050,7 @@ nav.main_menu>ul>li.active > a{
   width: 80px;
   position: absolute;
   top: 4.1vh;
-  right: 0;
+  left: calc(50% + 66vh);
   z-index: 4;
 }
 
@@ -1248,10 +1249,22 @@ nav.main_menu>ul>li.active > a{
     display: block;
     width: 120px;
     position: absolute;
-    top: 3.8vh;
+    top: 32px;
     left: 6vh;
-    z-index: 4;
+    z-index: 4;    
    }
+
+   .custom_search_button {
+      left: inherit;
+      right: 13vh;
+      top: 40px;      
+  }
+
+  .language-switcher {
+    left: inherit;
+    right: 0;
+    top: 40px;    
+  }
 }
 
 /** LESS TABLET **/
@@ -1348,8 +1361,8 @@ nav.main_menu>ul>li.active > a{
 
   .custom_search_button {
     position: absolute;
-    left: 5vh;
-    top: 3.8vh;
+    left: 6vh;
+    top: 37px;
     z-index: 99;
   }
 
@@ -1357,7 +1370,7 @@ nav.main_menu>ul>li.active > a{
     display: block;
     width: 80px;
     position: absolute;
-    top: 3.9vh;
+    top: 37px;
     right: -1vh;
     z-index: 4;
   }
