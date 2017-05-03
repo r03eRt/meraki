@@ -111,13 +111,13 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 	    display: block;
     	width: 100%;
     	font-style: italic;
-	    line-height: 4px;
+	    line-height: 16px;
 	}
 
 	span.subtitulo-2-proyecto {
 	    display: block;
 	    width: 100%;
-	    margin-top: 20px;
+	    margin-top: 12px;
 	    font-style: italic;
 	    line-height: 4px;
 	}
@@ -176,7 +176,11 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_destacada', $post_id );?>)"></div>
 				<div class="overlay">
 					<h2 class="titulo-proyecto"><span><?php echo get_field( 'titulo_' . $lang, $post_id );?></span></h2>
-					<span class="subtitulo-proyecto"><?php echo get_field( 'subtitulo_' . $lang, $post_id );?></span>
+					<span class="subtitulo-proyecto">
+					<?php echo get_field( 'subtitulo_' . $lang, $post_id );?><br>
+					<?php echo get_field( 'fecha_' . $lang, $post_id );?>
+						
+					</span>
 					<span class="subtitulo-2-proyecto"><?php echo get_field( 'subtitulo_2_' . $lang, $post_id );?></span>
 					<span class="readmore">
 						<i class="fa fa-plus" aria-hidden="true"></i>

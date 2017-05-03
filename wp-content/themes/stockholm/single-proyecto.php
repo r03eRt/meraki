@@ -62,10 +62,12 @@
 		font-family: 'Futura Light';
 		font-style: italic;
 		font-size: 13px;
-		text-transform: lowercase;
+		text-transform: initial;
 		letter-spacing: 0;
 		font-weight: normal;
 		color: #252525;
+	    line-height: 16px;
+		margin-top: 5px;
 	}
 
 	.proyecto-header h2 .subtitulo:first-letter {
@@ -234,6 +236,16 @@
 	    z-index: 9500;
 	}
 
+/*
+	div.pp_pic_holder{
+	    position: absolute;
+	    top: 50%!important;
+	    left: 50%!important;
+	    -webkit-transform: translate3d(-50%,-50%,0);
+	    transform: translate3d(-50%,-50%,0);
+	}
+*/
+
 	body div.pp_default a.pp_next, body div.pp_default a.pp_previous {
 	    background-color: transparent!important;
 	    border: none;
@@ -292,8 +304,6 @@
 		.pp_fade {
 			position: relative;
 		}
-
-
 	}
 
 </style>
@@ -304,12 +314,16 @@
 			<figure class="bg" style="background-image: url(<?php echo get_field( 'img_cabecera');?>)"></figure>
 			<h2>
 				<span class="titulo"><?php echo get_field( 'titulo_' . $lang); ?></span>
-				<span class="subtitulo"><?php echo get_field( 'subtitulo_' . $lang); ?></span>
+				<span class="subtitulo">
+					<?php echo get_field( 'fecha_' . $lang); ?>
+					<br>
+					<?php echo get_field( 'subtitulo_' . $lang); ?>
+					<?php echo get_field( 'subtitulo_2_' . $lang); ?></span>
 			</h2>			
 		</div>
 	</div>
 	<div class="row">
-		<a href="<?php echo get_field( 'img_1')?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-xs-6 col-sm-4 col-md-4">
+		<!-- <a href="<?php echo get_field( 'img_1')?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-xs-6 col-sm-4 col-md-4">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_1')?>)"></div>
 				<div class="overlay"></div>
@@ -324,7 +338,7 @@
 		<div class="proyecto-div block-1 col-xs-6 col-sm-4 col-md-4">
 			<h2><span><?php echo get_field( 'titular_' . $lang )?></span></h2>
 			<?php echo get_field( 'texto_' . $lang )?>
-		</div>
+		</div> -->
 		<?php for($i = 0; $i < count(get_field('repeater_img')); $i++){ ?>
 			<a href="<?php echo get_field('repeater_img')[$i]['img'] ?>" rel="prettyPhoto[<?php echo get_field( 'titulo_' . $lang); ?>]" class="proyecto-div block-1 col-xs-6 col-sm-4 col-md-4">
 				<figure>
