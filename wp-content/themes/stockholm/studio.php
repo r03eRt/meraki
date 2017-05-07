@@ -99,35 +99,65 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		text-align: justify;
 	}
 
+	@media(max-width: 1000px) {
+		.main-container {
+			width: 100%;
+		    min-height: calc(100vh - 130px);
+		}
+	}
+
+	@media(max-width: 768px) {
+		.main-container {
+			width: 100%;
+		    min-height: calc(100vh - 130px);
+		}
+	}
+
+	@media(max-width: 480px) {
+		.col-xs-6 {
+			width: 100%;		    
+		}
+
+		.studio-div.block-4 {
+		    padding: 7.5px 7.5px;
+		    text-align: justify;
+		}
+
+	}
+
 </style>
 
 
 <div class="main-container container">
 	<div class="row">
-		<div class="studio-div block-1 col-md-5">
+		<div class="studio-div block-3 col-xs-6 col-md-4 visible-xs">
+			<h2><span><?php echo get_field( 'titulo_1_' . $lang )?></span></h2>
+			<?php echo get_field( 'texto_1_' . $lang )?>
+		</div>
+		<div class="studio-div block-1 col-xs-6 col-md-5">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_1_' . $lang )?>)"></div>
 			</figure>
 		</div>
-		<div class="studio-div block-2 col-md-3">
+		<div class="studio-div block-2 col-xs-6 col-md-3">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_2_' . $lang )?>)"></div>
 			</figure>
 		</div>
-		<div class="studio-div block-3 col-md-4">
+		<div class="studio-div block-3 col-xs-6 col-md-4 hidden-xs">
 			<h2><span><?php echo get_field( 'titulo_1_' . $lang )?></span></h2>
 			<?php echo get_field( 'texto_1_' . $lang )?>
 		</div>
-		<div class="studio-div block-4 col-md-5">
+		<div class="studio-div block-4 col-xs-6 col-md-5">
 			<h2><span><?php echo get_field( 'titulo_2_' . $lang )?></span></h2>
 			<?php echo get_field( 'texto_2_' . $lang )?>
 		</div>
-		<div class="studio-div block-5 col-md-3">
+		<div class="studio-div block-5 col-xs-6 col-md-3">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_3_' . $lang )?>)"></div>
 			</figure>
 		</div>
-		<div class="studio-div block-6 col-md-4">
+		<div class="studio-div block-6 col-xs-6 col-md-4">
 			<figure>
 				<div class="bg" style="background-image: url(<?php echo get_field( 'img_4_' . $lang )?>)"></div>
 			</figure>

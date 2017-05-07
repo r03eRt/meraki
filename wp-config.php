@@ -21,14 +21,21 @@
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 //define('WP_CACHE', true); //Added by WP-Cache Manager
-define( 'WPCACHEHOME', '/Users/robertomorgadoluengo/work/code/meraki/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
+//define( 'WPCACHEHOME', '/Users/robertomorgadoluengo/work/code/meraki/wp-content/plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 define('DB_NAME', 'meraki');
+//PROD
+//define('DB_NAME', 'merakidb');
 
 /** MySQL database username */
 define('DB_USER', 'root');
+//PROD
+//define('DB_USER', 'mymerakist');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'root');
+//PROD
+//define('DB_PASSWORD', 'Yr4v1Yad');
+
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');

@@ -1,3 +1,29 @@
+
+
+<style>
+	
+.blog_holder.masonry article {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.post_text {
+    background: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.blog_holder article.format-quote .post_text .post_text_inner {
+   background-color:#ffffff;
+}
+
+.content_inner, .content_inner .container{
+background-color:whitesmoke;
+}
+
+</style>
+
 <?php 
 global $qode_options;
 

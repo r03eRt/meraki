@@ -134,8 +134,8 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 	
 </div>
 
-
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzDY7dbQjnr1lcX_Cp5bYS7Z5zMlY9gIg"
+<!--AIzaSyCvGcyg48ZJYUZOubvJ3Rz6I2mMBPOZBIU-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvGcyg48ZJYUZOubvJ3Rz6I2mMBPOZBIU"
   type="text/javascript"></script>
     <script>
 

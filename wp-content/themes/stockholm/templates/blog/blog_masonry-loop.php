@@ -1,8 +1,36 @@
+
+
+<style>
+	
+.blog_holder.masonry article {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.post_text {
+    background: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+.blog_holder article.format-quote .post_text .post_text_inner {
+   background-color:#ffffff;
+}
+
+.content_inner, .content_inner .container{
+background-color:whitesmoke;
+}
+
+</style>
+
 <?php
 $lang = strtolower(ICL_LANGUAGE_CODE); 
 global $qode_options;
 global $more;
 $more = 0;
+
+
 
 $blog_hide_comments = "";
 if (isset($qode_options['blog_hide_comments'])) {
@@ -20,6 +48,8 @@ if (isset($qode_options['wp_read_more'])) {
 }
 $_post_format = get_post_format();
 ?>
+
+
 <?php
 switch ($_post_format) {
 	case "video":

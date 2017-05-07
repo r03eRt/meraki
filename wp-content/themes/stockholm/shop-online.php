@@ -9,6 +9,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 <style>
 	.main-container {		
 	    min-height: calc(100vh - 258px);
+	    width: calc(100% - 60px);
 	    background-color: #ffffff;
 	    margin-top: 186px!important;
 	    margin-bottom: 40px!important;	    
@@ -21,7 +22,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		width: 100%;
 		height: 100%;
 		margin: 0;
-		display: block;
+		display: bottom: ;lock;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -55,7 +56,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 
 	@media(max-width: 1000px) {
 		.main-container {
-		    margin-top: 30px!important;
+		    margin-top: 30px!important;		    
 		}
 	}
 
