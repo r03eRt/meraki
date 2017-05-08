@@ -3,7 +3,6 @@
 
 
 
-
 @-ms-viewport {
   width: device-width;
 }
@@ -1372,4 +1371,14 @@ nav.main_menu>ul>li.active > a{
     z-index: 4;
   }
 
+}
+
+.direccion a {
+    color: #8d8d8d;
+    -webkit-transition: linear 0.3s color;
+    transition: linear 0.3s color;
+}
+
+.direccion a:hover {
+    color: #777777;
 }
