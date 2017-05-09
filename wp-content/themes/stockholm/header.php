@@ -372,7 +372,7 @@ global $qode_toolbar;
 					$facebook = get_field('facebook', 'options');
 					$twitter = get_field('twitter', 'options');
 
-					echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_twitter_circle" size="large" target="_blank" link="' . $twitter .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_self" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
+					echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_self" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
 				?>
 			</div>
 
@@ -592,7 +592,7 @@ global $qode_toolbar;
 								$facebook = get_field('facebook', 'options');
 								$twitter = get_field('twitter', 'options');
 
-								echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_twitter_circle" size="large" target="_blank" link="' . $twitter .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_self" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
+								echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_self" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
 							?>
 								</li>
 							</ul>

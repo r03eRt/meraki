@@ -292,18 +292,19 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 	<div class="container">
 		<div class="row row-footer">
 			<div class="col-sm-3 col-md-3 logo text-center">
-				<img src="http://localhost/wp-content/uploads/2017/03/MERAKI.png" alt="logo" />
+				<img src="http://www.merakistudiomadrid.com/wp-content/uploads/2017/03/MERAKI.png" alt="logo" />
 			</div>
 			<div class="col-sm-6 col-md-6 direccion">
 
 			<?php 
 				$link = get_field('footer_link_' . $lang, 'options');
-				$direction = get_field('footer_direction_' . $lang, 'options');
+				$direction = get_field('footer_direction_' . 'es', 'options');
 			?>
 				<p>
 				<a href="mailto:<?php echo $link; ?>"><?php echo $link; ?><br class="visible-xs"/>
 					
-				</a> <?php echo $direction; ?></p>
+				</a> <?php //echo $direction; ?>
+				| Calle Campoamor 10, 28004 Madrid | +34 914 21 40 96</p>
 			</div>
 			<div class="col-sm-3 col-md-3 social">
 
@@ -312,7 +313,7 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 					$facebook = get_field('facebook', 'options');
 					$twitter = get_field('twitter', 'options');
 
-					echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_twitter_circle" size="large" target="_blank" link="' . $twitter .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_self" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
+					echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_self" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
 				?>
 			</div>
 		</div>
