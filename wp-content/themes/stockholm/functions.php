@@ -2253,6 +2253,14 @@ function my_vc_shortcode( $atts ) {
     {
     	get_template_part('prensa');
     }
+    else if($atts['title'] == 'privacy')
+    {
+    	get_template_part('privacy');
+    }
+    else if($atts['title'] == 'cookies')
+    {
+    	get_template_part('cookies');
+    }
 
     return ob_get_clean();   
 }

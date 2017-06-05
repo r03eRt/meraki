@@ -142,6 +142,44 @@
             "ui": 0,
             "ui_on_text": "",
             "ui_off_text": ""
+        },
+        {
+            "key": "field_5935c87ca41f0",
+            "label": "Footer Cookies ES",
+            "name": "footer_cookies_es",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0
+        },
+        {
+            "key": "field_5935c9cca41f1",
+            "label": "Footer Cookies EN",
+            "name": "footer_cookies_en",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         }
     ],
     "location": [
@@ -161,5 +199,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1493836765
+    "modified": 1496697310
 }

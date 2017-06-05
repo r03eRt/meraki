@@ -289,7 +289,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	                    lng: results[0].geometry.location.lng()
 	                });
 
-	                var iconBase = 'http://localhost/wp-content/uploads/2017/03/MERAKI.png';
+	                var iconBase = 'http://www.merakistudiomadrid.com/wp-content/uploads/2017/03/MERAKI.png';
 	                var marker = new google.maps.Marker({
 	                    map: map,
 	                    position: results[0].geometry.location,

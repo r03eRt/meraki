@@ -64,4 +64,36 @@
 13.- Vamos traduciendo y copiando el contenido que queramos con el icono
 14.- Pulsamos en guardar y cerrar
 3.- Pulsar en actualizar
+
+
+#Añadir pagina con distinto slug
+1.- Añadir nueva pagina
+2.- Poner titulo en castellano
+3.- Rellenar en el visual editor el shortcode para seleccionar el template
+4.- Ir a functions.php y añadir el template que queramos al elseif de functions
+5.- Quitar el header y la animacion
+6.- Dejar marcado duplicar os checkboxs
+7.- Publicar
+8.- Marcar duplicar en traduccion y generar la traduccion en Ingles
+9.- Ir a ingles y traducir de manarea independiente y si hace falta sobrescribir del español
+10.- Cambiar Slug por slug en el idioma que sea 
+11.- Publicar
+12.- Hacer paso de ACF
+13.- rellenar los textos en el template de español
+14.- poner los campos de acf en copiar
+
+#Traducir pagina con distinto slug
+1.- Estando en español
+2.- Ir a custom fields
+3.- Haber creado ya las pagina en ingles y español
+4.- Añadir campos pensonalizados en ingles y español
+5.- Desactivar duplicar de los checkbox
+6.- Usar en las regla la pagina en castellano que corresponda
+7.- Publicar
+8.- dar a cehckbox de duplicar y duplicar en otro idioma
+9.- Ir al otro idioma y traducir de forma independiente
+10.- Seleccionar en reglas la pagina en ingles que corresponda
+11.- Publicar
+
+
  

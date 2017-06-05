@@ -303,8 +303,7 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 				<p>
 				<a href="mailto:<?php echo $link; ?>"><?php echo $link; ?><br class="visible-xs"/>
 					
-				</a> <?php //echo $direction; ?>
-				| Calle Campoamor 10, 28004 Madrid | +34 914 21 40 96</p>
+				</a> <?php echo $direction; ?></p>
 			</div>
 			<div class="col-sm-3 col-md-3 social">
 
@@ -313,11 +312,104 @@ if(is_array($footer_classes_array) && count($footer_classes_array)) {
 					$facebook = get_field('facebook', 'options');
 					$twitter = get_field('twitter', 'options');
 
-					echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_self" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
+					echo do_shortcode('[social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_facebook_circle" size="large" target="_blank" link="' . $facebook .'" icon_color="#393939" icon_hover_color="#e6ae48"][social_icons type="normal_social" icon_pack="font_elegant" fa_icon="fa-adn" fe_icon="social_instagram_circle" size="large" target="_blank" link="' . $instagram .'" icon_color="#393939" icon_hover_color="#e6ae48"]') 
 				?>
 			</div>
 		</div>
 	</div>
+	<style>
+		#cookiebar {
+		    position: fixed;
+		    border-top: 1px solid #777777;
+	    	bottom: 0;
+		    width: 100%;
+		    text-align: center;
+		    background-color: #ffffff;
+		    padding: 7.5px 0px;
+		    z-index: 100;
+		}
+
+		.hide{
+			display: none;
+		}
+
+		@media(max-width: 768px){
+			#cookiebar{
+			    position: fixed;
+			    border-top: 1px solid #777777;
+			    bottom: 0;
+			    width: 100%;
+			    text-align: center;
+			    background-color: #ffffff;
+			    padding: 7.5px 15px;
+			    z-index: 100;
+			    font-size: 12px;
+			    text-align: center;
+			}
+
+			.hide{
+				display: none;
+			}
+		}
+	</style>
+
+	<div id="cookiebar" class="hide">
+	    <p class="cookies-text">
+	    <?php 
+	    	echo get_field('footer_cookies_' . $lang, 'option'); 
+	    ?>
+	    </p>    
+	</div>
+
+	<script>
+			function initCookies()
+			{
+				//selectors to control
+				//let cntSelector = document.querySelector('#home');
+				//get the cookiebar selector
+				var cookiebarSelector = jQuery('#cookiebar');
+
+				// if(!cntSelector)
+				// 	cntSelector = document.querySelector('#main');
+			 
+				//check if visited before
+				if(!getCookie('meraki_visited'))
+				{
+					document.cookie = 'meraki_visited=true';
+
+					//show the cookie bar with the overlay white
+					cookiebarSelector.fadeIn();
+
+					var timer = setTimeout(function()
+					{
+						//hide cookiesbar
+						cookiebarSelector.fadeOut();
+					}, 10000)
+					
+				}
+			}
+
+			function getCookie(name)
+			{
+				//check if has been visited before
+				var found = document.cookie.indexOf(name) >= 0 ? true : false;
+
+				//return found
+				return found;
+			}
+
+			//on document ready create loader
+			if(document.readyState !== 'loading' )
+			    initookies();
+			else
+			{
+				document.addEventListener('DOMContentLoaded', function()
+			    {
+			    	initCookies();
+			    }, false);
+			}
+			    
+	</script>
 
 </footer>
 

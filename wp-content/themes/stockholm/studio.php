@@ -122,6 +122,11 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		    padding: 7.5px 7.5px;
 		    text-align: justify;
 		}
+		
+		.studio-div.block-4, .studio-div.block-3 {
+			min-height: initial;
+			padding-bottom: 20px;
+		}
 
 	}
 
