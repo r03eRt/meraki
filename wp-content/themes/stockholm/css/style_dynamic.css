@@ -385,7 +385,7 @@
 
 
 								.content{
-				margin-top: -192px;
+				margin-top: -227px;
 			}
 			
 	.content.content_top_margin{
@@ -414,7 +414,7 @@
         @media only screen and (min-width: 1000px){
             header.fixed_hiding .q_logo a,
             header.fixed_hiding .q_logo{
-                max-height: 35.5px;
+                max-height: 53px;
             }
         }
     

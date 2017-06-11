@@ -73,7 +73,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 	.studio-div h2 {
         text-align: center;
 	    margin-bottom: 20px;
-	    margin-top: 15px;
+	    margin-top: 40px;
 	    font-family: 'Futura Light';
 	    letter-spacing: 0px;
 	    font-size: 18px;
