@@ -2,7 +2,6 @@
 
 
 
-
 @-ms-viewport {
   width: device-width;
 }
@@ -1227,6 +1226,8 @@ nav.main_menu>ul>li.active > a{
 
 .wpb_revslider_element {
     height: calc(100% - 79px);
+    height: 90vh;
+    height:initial;
 }
 
 /** general styles**/
