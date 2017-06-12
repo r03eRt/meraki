@@ -1,6 +1,5 @@
 
 
-
 @-ms-viewport {
   width: device-width;
 }
@@ -1383,7 +1382,7 @@ nav.main_menu>ul>li.active > a{
     color: #777777;
 }
 
-header.centered_logo.centered_logo_animate .q_logo img, header:not(.centered_logo) .q_logo img {
+/**header.centered_logo.centered_logo_animate .q_logo img, header:not(.centered_logo) .q_logo img {
     height: 45%!important;
     margin-top: 25%;
-}
+}**/
