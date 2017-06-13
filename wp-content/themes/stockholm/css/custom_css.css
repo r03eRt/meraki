@@ -1386,3 +1386,55 @@ nav.main_menu>ul>li.active > a{
     height: 45%!important;
     margin-top: 25%;
 }**/
+
+header.centered_logo.sticky .q_logo img{
+    height: 80%!important;
+    top: -36%;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  {
+.custom_search_button {
+    position: absolute;
+    left: calc(50% + 46vh);
+    top: 4.2vh;
+    z-index: 99;
+}
+
+.language-switcher {
+    display: block;
+    width: 80px;
+    position: absolute;
+    top: 4.1vh;
+    left: calc(50% + 48vh);
+    z-index: 4;
+}
+
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+.custom_search_button {
+    position: absolute;
+    left: calc(50% + 24vh);
+    top: 4.2vh;
+    z-index: 99;
+}
+
+.language-switcher {
+    display: block;
+    width: 80px;
+    position: absolute;
+    top: 4.1vh;
+    left: calc(50% + 26vh);
+    z-index: 4;
+}
+
+}
+

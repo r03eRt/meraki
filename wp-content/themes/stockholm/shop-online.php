@@ -22,7 +22,7 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		width: 100%;
 		height: 100%;
 		margin: 0;
-		display: bottom: ;lock;
+		display: block;
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -38,6 +38,8 @@ $lang = strtolower(ICL_LANGUAGE_CODE);
 		transform: translate3d(-50%, -50%, 0);
 		text-align: center;
 		color: #ffffff;
+		padding: 15px;
+		background-color: rgba(97, 97, 97, 0.38);
 	}
 	.main-container .texto h1{
 		color: #ffffff;

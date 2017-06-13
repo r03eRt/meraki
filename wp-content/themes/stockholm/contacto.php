@@ -295,6 +295,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	                    position: results[0].geometry.location,
 	                    icon: iconBase
 	                });
+	                marker.addListener('click', function() {
+                        //window.location.href = 'https://goo.gl/maps/Hrz8TsrzpG72';
+                        window.open('https://goo.gl/maps/Hrz8TsrzpG72','_blank');
+					});
 
 	                map.panBy(-window.innerWidth/6, 0);
 	            }
